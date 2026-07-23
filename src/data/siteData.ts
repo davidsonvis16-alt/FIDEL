@@ -227,23 +227,7 @@ export const marketplaceItems: MarketplaceItem[] = [
     contactSubject: 'Tech Services & Consultation Inquiry',
     externalUrl: 'https://wa.me/0142614743?text=Hello%20Fidel%20Castrol%2C%20I%20am%20interested%20in%20your%20Tech%20Services.',
   },
-  {
-    id: 'mk-5',
-    title: 'Entrepreneur Books — The Entrepreneurial Tale by Fidel Castrol',
-    category: 'Entrepreneur Books',
-    image: bookCover,
-    description:
-      'The definitive guidebook for founders. Available in signed hardcover and digital editions detailing risk optimization, change management, and personal accountability.',
-    priceOrValue: '$150 USD Hardcover / Digital',
-    badge: 'Books for Sale',
-    location: 'Global Shipping',
-    features: [
-      'Signed & Serialized Collector Hardcover Edition',
-      'Pragmatic Playbook for Turning Ideas Into Businesses',
-      'Includes Lifetime Digital Masterclass Access',
-    ],
-    contactSubject: 'Order The Entrepreneurial Tale Book',
-  },
+
   {
     id: 'mk-6',
     title: 'Referral Programs — Earn Money Online via Visionary Affiliate',

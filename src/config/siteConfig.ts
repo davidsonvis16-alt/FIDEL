@@ -38,14 +38,13 @@ export const siteConfig: SiteConfig = {
       'Helping entrepreneurs transform ideas into businesses through execution, innovation, and practical knowledge.',
     bioSummary:
       'Fidel Castrol is a globally active entrepreneur, investor, and business strategist. As the creator of The Entrepreneurial Tale and founder of Global Ventufires, he leads initiatives empowering next-generation founders across capital markets, technology, and luxury real estate.',
-    location: 'London • Dubai • Global',
+    location:'Nairobi • Karen • Global',
     email: 'contact@globalventufires.com',
     whatsappPhone: '0714193384',
     socials: [
-      { platform: 'LinkedIn', url: 'https://linkedin.com', handle: '@fidelcastrol-official' },
-      { platform: 'Twitter / X', url: 'https://x.com', handle: '@fidel_castrol_gv' },
-      { platform: 'Instagram', url: 'https://instagram.com', handle: '@fidelcastrol.global' },
-      { platform: 'YouTube', url: 'https://youtube.com', handle: 'Global Ventufires Media' },
+      { platform: 'Twitter / X', url: 'https://x.com/Fidel_Castrol', handle: 'F.i.d.e.l_C.a.s.t.r.o.l' },
+      { platform: 'Instagram', url: 'https://www.instagram.com/f.i.d.e.l_c.a.s.t.r.o.l', handle: 'f.i.d.e.l_c.a.s.t.r.o.l' },
+      { platform: 'YouTube', url: 'https://youtube.com/@fidelcastroventures', handle: '@fidelcastroventures' },
     ],
   },
   book: {

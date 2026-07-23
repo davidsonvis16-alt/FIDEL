@@ -8,7 +8,6 @@ import { NavSection } from './types';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutSection } from './components/AboutSection';
-import { EntrepreneurialTale } from './components/EntrepreneurialTale';
 import { ArticlesSection } from './components/ArticlesSection';
 import { VideosSection } from './components/VideosSection';
 import { QuotesSection } from './components/QuotesSection';
@@ -42,7 +41,6 @@ export default function App() {
       const sections: NavSection[] = [
         'home',
         'about',
-        'tale',
         'articles',
         'videos',
         'marketplace',
@@ -80,15 +78,12 @@ export default function App() {
       <main>
         {/* Hero Section */}
         <Hero
-          onExploreBook={() => scrollToSection('tale')}
+          onExploreBook={() => scrollToSection('about')}
           onReadArticles={() => scrollToSection('articles')}
         />
 
         {/* About Fidel Castrol & Bio */}
         <AboutSection />
-
-        {/* The Entrepreneurial Tale Book Landing */}
-        <EntrepreneurialTale />
 
         {/* Articles & Newsroom */}
         <ArticlesSection />
