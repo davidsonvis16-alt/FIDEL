@@ -21,7 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-2">
-              <img src={gvLogo} alt="Global Ventufires" className="w-8 h-8 object-contain" />
+              <img src={gvLogo} alt="Global Mogul Entrepreneurs Lab" className="w-8 h-8 object-contain" />
               <span className="text-xl font-bold font-editorial text-[#111111]">
                 {siteConfig.author.company}
               </span>

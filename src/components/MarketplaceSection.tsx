@@ -194,7 +194,7 @@ export const MarketplaceSection: React.FC = () => {
                   </h3>
 
                   <p className="text-xs text-gray-500 font-sans">
-                    Direct confidential access through Global Ventufires Concierge.
+                    Direct confidential access through Global Mogul Entrepreneurs Lab Concierge.
                   </p>
 
                   <div className="space-y-3 pt-2">

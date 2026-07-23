@@ -304,10 +304,10 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: '2021',
-    title: 'Establishment of Global Ventufires',
+    title: 'Establishment of Global Mogul Entrepreneurs Lab',
     subtitle: 'Consolidating Ventures into an Integrated Holding Platform',
     description:
-      'Structured Global Ventufires to house technology services, real estate assets, and media ventures under unified leadership.',
+      'Structured Global Mogul Entrepreneurs Lab to house technology services, real estate assets, and media ventures under unified leadership.',
     highlightStat: 'Multi-Market Expansion',
   },
   {

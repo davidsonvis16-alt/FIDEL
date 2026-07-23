@@ -17,7 +17,7 @@ export const AboutSection: React.FC = () => {
             Editorial Biography
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold font-editorial text-[#111111] tracking-tight">
-            The Philosophy Behind Global Ventufires
+            The Philosophy Behind Global Mogul Entrepreneurs Lab
           </h2>
           <p className="text-base sm:text-lg text-gray-600 font-sans leading-relaxed">
             Fidel Castrol’s journey from foundational venture builder to global strategist, author, and thought leader.
@@ -103,14 +103,14 @@ export const AboutSection: React.FC = () => {
                     </h3>
                   </div>
                   <p className="text-base text-gray-700 leading-relaxed font-sans">
-                    Fidel Castro began his career on the frontlines of technology and market operations. Distilling real-world lessons from early corporate and startup environments, he recognized that the single biggest bottleneck in venture success was the gap between strategy and ground-level execution.
+                    Fidel Castrol began his career on the frontlines of technology and market operations. Distilling real-world lessons from early corporate and startup environments, he recognized that the single biggest bottleneck in venture success was the gap between strategy and ground-level execution.
                   </p>
                   <p className="text-base text-gray-700 leading-relaxed font-sans">
-                    Through founding Global Ventufires, Fidel built an ecosystem designed to eliminate friction for ambitious entrepreneurs — supplying legal, technical, and capital frameworks that convert ideas into enduring enterprises.
+                    Through founding Global Mogul Entrepreneurs Lab, Fidel built an ecosystem designed to eliminate friction for ambitious entrepreneurs — supplying legal, technical, and capital frameworks that convert ideas into enduring enterprises.
                   </p>
                   <div className="pt-4 flex items-center gap-6 border-t border-gray-100">
                     <div>
-                      <span className="text-2xl font-bold font-editorial text-[#111111]">10+</span>
+                      <span className="text-2xl font-bold font-editorial text-[#111111]">5+</span>
                       <span className="block text-xs text-gray-500 uppercase tracking-wider font-semibold">
                         Years Execution
                       </span>
@@ -175,7 +175,7 @@ export const AboutSection: React.FC = () => {
                     To establish a borderless network of high-performing entrepreneurs, technology builders, and capital partners who build sustainable value for generations to come.
                   </p>
                   <div className="p-4 bg-[#F7F7F5] rounded-2xl border border-gray-100 text-sm text-gray-800">
-                    <strong className="text-[#111111] block mb-1 font-semibold">The Global Ventufires Standard</strong>
+                    <strong className="text-[#111111] block mb-1 font-semibold">The Global Mogul Entrepreneurs Lab Standard</strong>
                     "We do not invest in hype. We back founders who combine operational discipline with undeniable market necessity."
                   </div>
                 </motion.div>

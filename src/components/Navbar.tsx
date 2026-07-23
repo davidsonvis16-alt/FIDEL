@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
           id="nav-logo-btn"
           className="flex items-center gap-2 group text-left focus:outline-hidden"
         >
-          <img src={gvLogo} alt="Global Ventufires" className="w-8 h-8 object-contain" />
+          <img src={gvLogo} alt="Global Mogul Entrepreneurs Lab" className="w-8 h-8 object-contain" />
           <div>
             <span className="block text-sm sm:text-base font-bold tracking-tight text-[#111111] font-sans">
               {siteConfig.author.company}

@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreBook, onReadArticles }) => 
               <div className="relative rounded-3xl overflow-hidden bg-[#F7F7F5] border border-gray-200/60 shadow-2xl group">
                 <img
                   src={fidelPortrait}
-                  alt="Fidel Castro — Founder of Global Ventufires"
+                  alt="Fidel Castro — Founder of Global Mogul Entrepreneurs Lab"
                   className="w-full h-auto object-cover aspect-[3/4] filter contrast-[1.02] brightness-[1.01] transition-transform duration-700 group-hover:scale-102"
                   referrerPolicy="no-referrer"
                 />

@@ -132,7 +132,7 @@ export const ContactSection: React.FC = () => {
                   Message Dispatched
                 </h3>
                 <p className="text-sm text-gray-600 font-sans max-w-md mx-auto">
-                  Thank you for connecting with Fidel Castrol and the Global Ventufires team. We will respond promptly.
+                  Thank you for connecting with Fidel Castrol and the Global Mogul Entrepreneurs Lab team. We will respond promptly.
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
@@ -208,7 +208,7 @@ export const ContactSection: React.FC = () => {
                       type="text"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      placeholder="Global Ventufires"
+                      placeholder="Global Mogul Entrepreneurs Lab"
                       className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-xs font-medium focus:outline-hidden focus:border-[#C8A44D] text-[#111111]"
                     />
                   </div>
