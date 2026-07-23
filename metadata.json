@@ -1,0 +1,6 @@
+{
+  "name": "Fidel Castrol — Global Ventufires",
+  "description": "Official personal platform and media hub for Fidel Castrol, founder of Global Ventufires and author of The Entrepreneurial Tale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
