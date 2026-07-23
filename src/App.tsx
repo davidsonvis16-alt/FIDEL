@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { NavSection } from './types';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -15,96 +16,71 @@ import { MarketplaceSection } from './components/MarketplaceSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
+const routeToSection: Record<string, NavSection> = {
+  '/': 'home',
+  '/about': 'about',
+  '/articles': 'articles',
+  '/videos': 'videos',
+  '/marketplace': 'marketplace',
+  '/contact': 'contact',
+};
+
 export default function App() {
   const [activeSection, setActiveSection] = useState<NavSection>('home');
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const scrollToSection = (sectionId: NavSection) => {
-    setActiveSection(sectionId);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80; // Navbar height offset
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
-  };
-
-  // Scroll Spy to keep navbar active link synced
   useEffect(() => {
-    const handleScroll = () => {
-      const sections: NavSection[] = [
-        'home',
-        'about',
-        'articles',
-        'videos',
-        'marketplace',
-        'contact',
-      ];
+    setActiveSection(routeToSection[location.pathname] ?? 'home');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
 
-      const scrollPosition = window.scrollY + 120;
-
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
+  const handleNavigate = (section: NavSection) => {
+    const pathMap: Record<NavSection, string> = {
+      home: '/',
+      about: '/about',
+      tale: '/',
+      articles: '/articles',
+      videos: '/videos',
+      marketplace: '/marketplace',
+      contact: '/contact',
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    setActiveSection(section);
+    navigate(pathMap[section]);
+  };
 
   return (
     <div className="min-h-screen bg-white text-[#111111] font-sans antialiased selection:bg-[#C8A44D] selection:text-white">
-      {/* Sticky Apple-Inspired Navbar */}
       <Navbar
         activeSection={activeSection}
-        onNavigate={(section) => scrollToSection(section)}
+        onNavigate={handleNavigate}
       />
 
-      {/* Main Content Sections */}
       <main>
-        {/* Hero Section */}
-        <Hero
-          onExploreBook={() => scrollToSection('about')}
-          onReadArticles={() => scrollToSection('articles')}
-        />
-
-        {/* About Fidel Castrol & Bio */}
-        <AboutSection />
-
-        {/* Articles & Newsroom */}
-        <ArticlesSection />
-
-        {/* Videos Library */}
-        <VideosSection />
-
-        {/* Full-screen Quote Moments */}
-        <QuotesSection />
-
-        {/* Enclave Luxury Marketplace */}
-        <MarketplaceSection />
-
-        {/* Minimal Contact Page */}
-        <ContactSection />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero
+                  onExploreBook={() => handleNavigate('about')}
+                  onReadArticles={() => handleNavigate('articles')}
+                />
+                <QuotesSection />
+              </>
+            }
+          />
+          <Route path="/about" element={<AboutSection />} />
+          <Route path="/articles" element={<ArticlesSection />} />
+          <Route path="/videos" element={<VideosSection />} />
+          <Route path="/marketplace" element={<MarketplaceSection />} />
+          <Route path="/contact" element={<ContactSection />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
 
-      {/* Footer */}
-      <Footer
-        onNavigate={(section) => scrollToSection(section)}
-      />
+      <Footer onNavigate={handleNavigate} />
     </div>
   );
 }
